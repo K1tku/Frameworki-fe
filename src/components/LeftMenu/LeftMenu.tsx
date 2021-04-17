@@ -10,10 +10,14 @@ import network from '../icons/network.png';
 import publications from '../icons/publications.png';
 import plus from '../icons/plus.png';
 import userPlus from '../icons/user-plus.png';
+import entities from '../icons/entities.png';
+import ecosystem from '../icons/ecosystem.png';
+
 
 const InnerWrapper = styled.div`
   margin-top: 20px;
   margin-left: 20px;
+  height: 170px;
   width: 250px;
   background: white;
   border-top-left-radius: 5px;
@@ -45,6 +49,10 @@ margin-left: 10px;
   margin-top: 10px;
 `;
 
+const PEE = styled.div`
+  margin-left: 40px;
+  margin-top: 20px;
+`;
 
 export const LeftMenu: FC = () => {
 
@@ -56,10 +64,12 @@ export const LeftMenu: FC = () => {
                 </Photo>
                 <NameAndTitle>
                     <div>
-                        High Mountain Tauren
+                      <button style={{background:'white', border:'none', cursor: 'pointer'}}>
+                          <h1 style={{color:'blue', fontSize:'18px',}}>High Mountain Tauren</h1>
+                      </button>
                     </div>
                     <div>
-                        <br/> Job title - Horde
+                        <br/> <h2 style={{color:'darkgrey',marginTop:'-5px'}}>Job title - Horde</h2>
                     </div>
                 </NameAndTitle>
 
@@ -70,7 +80,7 @@ export const LeftMenu: FC = () => {
                        <button style={{background:'white', border:'none', cursor:'pointer', }}>
                            <img src = {network} alt = {network} style={{marginTop:'px'}}/>
                        </button>
-                   Your Network
+                       <a>Your Network</a>
                        <button style={{width:'28px', marginLeft:'71px', cursor: 'pointer', background:'white', height:'20px', borderRadius:'5px'}}>
                            <img src = {userPlus} alt = {userPlus} style={{}}/>
                        </button>
@@ -81,7 +91,7 @@ export const LeftMenu: FC = () => {
                         <button style={{background:'white', border:'none', cursor:'pointer', }}>
                         <img src = {publications} alt = {publications}/>
                         </button>
-                    Your Publications
+                        <a>Your Publications</a>
                       <button style={{width:'28px', marginLeft:'50px', cursor: 'pointer', background:'white', height:'20px', borderRadius:'5px'}}>
                           <img src = {plus} alt = {plus} style={{}}/>
                       </button>
@@ -89,6 +99,27 @@ export const LeftMenu: FC = () => {
                 </YourPublications>
 
             </InnerWrapper2>
+            <PEE>
+                <div>
+                    <button style={{border:'none', background:'none', marginTop:'10px',cursor:'pointer'}}>
+                        <img src = {publications} alt = {publications} style={{height:'18px'}}/>
+                        <a style={{marginLeft:'15px', fontSize:'18px'}}>Publications</a>
+                    </button>
+                </div>
+                <div>
+                    <button style={{border:'none', background:'none', marginTop:'10px',cursor:'pointer'}}>
+                        <img src = {ecosystem} alt = {ecosystem} style={{height:'25px'}}/>
+                        <a style={{marginLeft:'15px', fontSize:'18px'}}>Ecosystem</a>
+                    </button>
+                </div>
+                <div>
+                    <button style={{border:'none', background:'none', marginTop:'10px',cursor:'pointer'}}>
+                        <img src = {entities} alt = {entities}/>
+                        <a style={{marginLeft:'15px', fontSize:'18px'}}>Entities</a>
+                    </button>
+                </div>
+
+            </PEE>
 
         </Wrapper>
     )

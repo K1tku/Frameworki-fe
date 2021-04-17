@@ -36,7 +36,8 @@ export const HomePage: FC = () => {
             <LatestPublications>
 
             </LatestPublications>
-            <br/><div style={{marginLeft:'40px'}}>Workspaces</div>
+            <br/><div style={{marginLeft:'40px'}}>
+            <h1>Workspaces</h1></div>
             <WorkSpaces>
 
             </WorkSpaces>
