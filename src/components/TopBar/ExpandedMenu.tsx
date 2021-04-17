@@ -15,9 +15,10 @@ export const ExpandedMenu: FC = () => {
     return(
         <Wrapper>
             <ul>
-                <li>11111111111</li>
-                <li>22222222222</li>
-                <li>33333333333</li>
+                <li>Pozycja 1</li>
+                <li>Pozycja 2</li>
+                <li>Pozycja 3</li>
+                <li>Pozycja 4</li>
             </ul>
         </Wrapper>
     );

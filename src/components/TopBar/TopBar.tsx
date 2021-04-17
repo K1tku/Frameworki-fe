@@ -30,6 +30,7 @@ const RightIcons = styled.div`
   display: grid;
   grid-template-columns: repeat(5,auto);
   grid-gap: 10px;
+  
 `;
 
 const InputWrapper = styled.div`
@@ -49,8 +50,6 @@ const SearchField = styled.div`
   padding: 8px;
   margin-left: 130px;
   
-
-
 `;
 
 const SearchButton = styled.div`
@@ -70,6 +69,7 @@ const MenuWrapper = styled.div`
   align-items: center;
   width: 250px;
   justify-content: space-between;
+  
 `;
 const LeftSide = styled.div`
 
@@ -88,7 +88,7 @@ export const TopBar: FC = () => {
             <InnerWrapper>
 
                 <LeftLogo>
-                    <img src={logo} alt="logo" height="50px" />
+                    <img src={logo} alt="logo" height="40px" />
                 </LeftLogo>
 
                 <MenuWrapper ref={wrapperRef}>

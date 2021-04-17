@@ -5,13 +5,16 @@ import { TopBar } from '../TopBar/TopBar';
 import { LeftMenu } from '../LeftMenu/LeftMenu';
 import { Wrapper } from '../StyledHelpers/Components';
 import { Colors } from '../StyledHelpers/Colors';
+import {HomePage} from "../HomePage/HomePage";
 
 
 const Content = styled.div`
-  
-  align-items: center;
+  height: 1000px;
   display: flex;
+  background: darkgray;
+  
 `;
+
 
 const MainPage: FC = () => {
     return (
@@ -19,8 +22,9 @@ const MainPage: FC = () => {
             <TopBar/>
             <Content>
                 <LeftMenu/>
-                <div></div>
+                <HomePage/>
             </Content>
+
         </Wrapper>
     );
 };
