@@ -3,6 +3,10 @@ import styled from 'styled-components';
 
 import { Wrapper } from '../StyledHelpers/Components';
 import search from "../icons/search.png";
+import arrowDown from "../icons/arrow-down.png"
+import useDropdown from "react-dropdown-hook";
+import {ExpandedMenuHP} from "../HomePage/ExpandedMenuHP";
+
 
 
 
@@ -28,7 +32,7 @@ const WorkSpaces = styled.div`
 const ResumeYourWork = styled.div`
   margin-left: 30px;
   margin-top: 20px;
-  background: white;
+  background: none;
 `;
 const SearchField = styled.div`
   width: 250px;
@@ -43,10 +47,29 @@ const SearchButton = styled.div`
   cursor: pointer;
   margin-left: 1250px;
   position: absolute;
-  margin-top: -29px;
+  margin-top: -26px;
+`;
+const MenuWrapper = styled.div`
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  width: 90px;
+  justify-content: space-between;
+  margin-left: 1330px;
+  margin-top: -20px;
+  
+`;
+const LeftSide = styled.div`
+
 `;
 
 export const HomePage: FC = () => {
+    const [wrapperRef, dropdownOpen, toggleDropDown] = useDropdown();
+
+    const menuHandler = () => {
+        toggleDropDown();
+    }
     return (
         <Wrapper>
             <LatestPublications>
@@ -61,12 +84,22 @@ export const HomePage: FC = () => {
                 <h1 style={{fontSize:'20px', color:'darkslategrey' }}>Resume Your Work</h1>
 
                 <SearchField>
-                    <input type="text" placeholder="Search" />
+                    <input type="text" placeholder="Filter by title..." style={{height:'20px'}}/>
                 </SearchField>
 
                 <SearchButton>
                     <img src={search} alt="search" />
                 </SearchButton>
+
+                <MenuWrapper ref={wrapperRef}>
+                    <LeftSide onClick={menuHandler}>
+                        <span style={{fontSize:'19px', color:'blue'}}>Followed</span>
+                    </LeftSide >
+                    <img onClick={menuHandler} src ={arrowDown} alt = ""/>
+                    {dropdownOpen &&
+                    <ExpandedMenuHP/>
+                    }
+                </MenuWrapper>
             </ResumeYourWork>
         </Wrapper>
     );

@@ -48,7 +48,7 @@ const LeftLogo = styled.div`
 const SearchField = styled.div`
   width: 250px;
   padding: 8px;
-  margin-left: 130px;
+  margin-left: -350px;
   
 `;
 
@@ -58,7 +58,8 @@ const SearchButton = styled.div`
   padding: 3px;
   font-size: 30px;
   cursor: pointer;
-  margin-left: 280px;
+  margin-top: 2px;
+  margin-left: 140px;
   position: absolute;
   
   `;
@@ -69,6 +70,7 @@ const MenuWrapper = styled.div`
   align-items: center;
   width: 250px;
   justify-content: space-between;
+  margin-left: -650px;
   
 `;
 const LeftSide = styled.div`
@@ -104,7 +106,7 @@ export const TopBar: FC = () => {
 
                 <InputWrapper>
                     <SearchField>
-                        <input type="text" placeholder="Search" />
+                        <input type="text" placeholder="Search Legalcuster" style={{width:'500px', height:'20px'}}/>
                     </SearchField>
 
                     <SearchButton>
