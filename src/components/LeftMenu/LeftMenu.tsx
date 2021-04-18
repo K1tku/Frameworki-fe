@@ -60,7 +60,7 @@ export const LeftMenu: FC = () => {
         <Wrapper>
             <InnerWrapper>
                 <Photo>
-                <img src = {tauren} alt={tauren} height="90px" />
+                <img src = {tauren} alt={tauren} height="90px" style={{borderRadius:'40px'}} />
                 </Photo>
                 <NameAndTitle>
                     <div>
@@ -79,8 +79,9 @@ export const LeftMenu: FC = () => {
                    <div style={{marginLeft:'5px'}}>
                        <button style={{background:'white', border:'none', cursor:'pointer', }}>
                            <img src = {network} alt = {network} style={{marginTop:'px'}}/>
+                           <a style={{marginLeft:'10px'}}>Your Network</a>
                        </button>
-                       <a>Your Network</a>
+
                        <button style={{width:'28px', marginLeft:'71px', cursor: 'pointer', background:'white', height:'20px', borderRadius:'5px'}}>
                            <img src = {userPlus} alt = {userPlus} style={{}}/>
                        </button>
@@ -90,8 +91,9 @@ export const LeftMenu: FC = () => {
                     <div style={{marginLeft:'5px'}}>
                         <button style={{background:'white', border:'none', cursor:'pointer', }}>
                         <img src = {publications} alt = {publications}/>
+                            <a style={{marginLeft:'10px'}}>Your Publications</a>
                         </button>
-                        <a>Your Publications</a>
+
                       <button style={{width:'28px', marginLeft:'50px', cursor: 'pointer', background:'white', height:'20px', borderRadius:'5px'}}>
                           <img src = {plus} alt = {plus} style={{}}/>
                       </button>

@@ -11,7 +11,7 @@ import {HomePage} from "../HomePage/HomePage";
 const Content = styled.div`
   height: 1000px;
   display: flex;
-  background: darkgray;
+  background: lightgrey;
   
 `;
 
