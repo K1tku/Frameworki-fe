@@ -106,7 +106,7 @@ export const TopBar: FC = () => {
 
                 <InputWrapper>
                     <SearchField>
-                        <input type="text" placeholder="Search Legalcuster" style={{width:'500px', height:'20px'}}/>
+                        <input type="text" placeholder="Search Legalcluster" style={{width:'500px', height:'20px'}}/>
                     </SearchField>
 
                     <SearchButton>
