@@ -65,8 +65,8 @@ export const LeftMenu: FC = () => {
                 </Photo>
                 <NameAndTitle>
                     <div>
-                      <button style={{background:'white', border:'none', cursor: 'pointer'}}>
-                          <h1 style={{color:'blue', fontSize:'18px',}}>High Mountain Tauren</h1>
+                      <button style={{background:'white', border:'none', cursor: 'pointer', overflow:'hidden', outline:'none'}}>
+                          <h1 style={{color:'blue', fontSize:'18px'}}>High Mountain Tauren</h1>
                       </button>
                     </div>
                     <div>
