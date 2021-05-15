@@ -7,6 +7,13 @@ import { Wrapper } from '../StyledHelpers/Components';
 import { Colors } from '../StyledHelpers/Colors';
 import {HomePage} from "../HomePage/HomePage";
 
+import{
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+
 
 const Content = styled.div`
   height: 1000px;
@@ -18,6 +25,7 @@ const Content = styled.div`
 
 const MainPage: FC = () => {
     return (
+        <Router>
         <Wrapper>
             <TopBar/>
             <Content>
@@ -26,6 +34,7 @@ const MainPage: FC = () => {
             </Content>
 
         </Wrapper>
+        </Router>
     );
 };
 

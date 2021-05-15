@@ -13,6 +13,14 @@ import userPlus from '../icons/user-plus.png';
 import entities from '../icons/entities.png';
 import ecosystem from '../icons/ecosystem.png';
 
+import {Entities} from "../common/Entities";
+import{
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+
 
 const InnerWrapper = styled.div`
   margin-top: 20px;
@@ -58,6 +66,7 @@ const PEE = styled.div`
 export const LeftMenu: FC = () => {
 
     return (
+        <Router>
         <Wrapper>
             <InnerWrapper>
                 <Photo>
@@ -125,6 +134,7 @@ export const LeftMenu: FC = () => {
             </PEE>
 
         </Wrapper>
+        </Router>
     )
 
 }
