@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const Entities: FC = () => {
     return (
-        <div>ENTITIES</div>
+        <div>ENTITIESzsczsdzssgrfakhjgfasjdkfvbsajdhkfvasdjkfvasdfjhkavsdfkjhasdvfsahjdvfkajshdvfasjkhdfvasjdkhfasdf</div>
+
     );
 }

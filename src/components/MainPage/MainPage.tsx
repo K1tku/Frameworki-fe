@@ -13,6 +13,12 @@ import{
     Route,
     Link
 } from "react-router-dom";
+import {Entities} from "../common/Entities";
+import {Ecosystem} from "../common/Ecosystem";
+import {Publications} from "../common/Publications";
+import {YourNetwork} from "../common/YourNetwork";
+import {YourPublications} from "../common/YourPublications";
+import {Profile} from "../Profile/Profile";
 
 
 const Content = styled.div`
@@ -30,7 +36,29 @@ const MainPage: FC = () => {
             <TopBar/>
             <Content>
                 <LeftMenu/>
-                <HomePage/>
+                <Switch>
+
+                    <Route path="/entities" exact>
+                        <Entities/>
+                    </Route>
+                    <Route path="/ecosystem" exact>
+                        <Ecosystem/>
+                    </Route>
+                    <Route path="/publications" exact>
+                        <Publications/>
+                    </Route>
+                    <Route path="/yourpublications" exact>
+                        <YourPublications/>
+                    </Route>
+                    <Route path="/yournetwork" exact>
+                        <YourNetwork/>
+                    </Route>
+                    <Route path="/profile" exact>
+                        <Profile/>
+                    </Route>
+
+                    <HomePage/>
+                </Switch>
             </Content>
 
         </Wrapper>

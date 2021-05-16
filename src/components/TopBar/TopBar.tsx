@@ -90,7 +90,7 @@ export const TopBar: FC = () => {
             <InnerWrapper>
 
                 <LeftLogo>
-                    <img src={logo} alt="logo" height="40px" />
+                    <a href="/HomePage"><img src={logo} alt="logo" height="40px" /> </a>
                 </LeftLogo>
 
                 <MenuWrapper ref={wrapperRef}>

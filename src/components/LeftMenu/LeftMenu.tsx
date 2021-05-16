@@ -75,7 +75,7 @@ export const LeftMenu: FC = () => {
                 <NameAndTitle>
                     <div>
                       <button style={{background:'white', border:'none', cursor: 'pointer', overflow:'hidden', outline:'none'}}>
-                          <h1 style={{color:'blue', fontSize:'18px'}}>High Mountain Tauren</h1>
+                          <a href="/Profile" style={{color:'blue', fontSize:'18px', textDecoration:'none'}}>High Mountain Tauren</a>
                       </button>
                     </div>
                     <div>
@@ -89,7 +89,7 @@ export const LeftMenu: FC = () => {
                    <div style={{marginLeft:'5px'}}>
                        <button style={{background:'white', border:'none', cursor:'pointer', }}>
                            <img src = {network} alt = {network} style={{marginTop:'px'}}/>
-                           <a style={{marginLeft:'10px'}}>Your Network</a>
+                           <a href="/YourNetwork" style={{marginLeft:'10px', textDecoration:'none', color:'black'}}>Your Network</a>
                        </button>
 
                        <button style={{width:'28px', marginLeft:'71px', cursor: 'pointer', background:'white', height:'20px', borderRadius:'5px'}}>
@@ -101,7 +101,7 @@ export const LeftMenu: FC = () => {
                     <div style={{marginLeft:'5px'}}>
                         <button style={{background:'white', border:'none', cursor:'pointer', }}>
                         <img src = {publications} alt = {publications}/>
-                            <a style={{marginLeft:'10px'}}>Your Publications</a>
+                            <a href="/YourPublications" style={{marginLeft:'10px', textDecoration:'none', color:'black'}}>Your Publications</a>
                         </button>
 
                       <button style={{width:'28px', marginLeft:'50px', cursor: 'pointer', background:'white', height:'20px', borderRadius:'5px'}}>
@@ -115,20 +115,22 @@ export const LeftMenu: FC = () => {
                 <div>
                     <button style={{border:'none', background:'none', marginTop:'10px',cursor:'pointer'}}>
                         <img src = {publications} alt = {publications} style={{height:'18px'}}/>
-                        <a style={{marginLeft:'15px', fontSize:'18px'}}>Publications</a>
+                        <a href="/Publications" style={{marginLeft:'15px', fontSize:'18px', textDecoration:'none', color:'black'}}>Publications</a>
                     </button>
                 </div>
                 <div>
-                    <button style={{border:'none', background:'none', marginTop:'10px',cursor:'pointer'}}>
+                    <button  style={{border:'none', background:'none', marginTop:'10px',cursor:'pointer'}}>
                         <img src = {ecosystem} alt = {ecosystem} style={{height:'25px'}}/>
-                        <a style={{marginLeft:'15px', fontSize:'18px'}}>Ecosystem</a>
+                        <a href="/Ecosystem" style={{marginLeft:'15px', fontSize:'18px', textDecoration:'none', color:'black'}}>Ecosystem</a>
                     </button>
                 </div>
                 <div>
                     <button style={{border:'none', background:'none', marginTop:'10px',cursor:'pointer'}}>
                         <img src = {entities} alt = {entities}/>
-                        <a style={{marginLeft:'15px', fontSize:'18px'}}>Entities</a>
+                        <a href="/Entities" style={{marginLeft:'15px', fontSize:'18px', textDecoration:'none', color:'black'}}>Entities</a>
+
                     </button>
+
                 </div>
 
             </PEE>
