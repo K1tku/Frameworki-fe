@@ -10,13 +10,10 @@ import writing from "../../media/photos/writing.jpg"
 import WorkspacesPhoto from"../../media/photos/WorkspacesPhoto.jpg"
 import tauren from '../../media/icons/tauren.png';
 import {ExpandedMenuHP} from "../HomePage/ExpandedMenuHP";
+import ReactPaginate from 'react-paginate';
+import "./styleToPaginate.css"
 
-import{
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
+
 
 
 const LatestPublications = styled.div`
@@ -73,12 +70,15 @@ const LeftSide = styled.div`
 
 `;
 
+
 export const HomePage: FC = () => {
     const [wrapperRef, dropdownOpen, toggleDropDown] = useDropdown();
 
     const menuHandler = () => {
         toggleDropDown();
     }
+
+
     return (
 
         <Wrapper>
@@ -136,6 +136,16 @@ export const HomePage: FC = () => {
                     <ExpandedMenuHP/>
                     }
                 </MenuWrapper>
+
+                <ReactPaginate
+                    previousLabel={"PREVIOUS"}
+                    nextLabel={"NEXT"}
+                    breakLabel={"..."}
+                    breakClassName={"break-me"}
+                    marginPagesDisplayed={2}
+                    pageRangeDisplayed={3}
+                    containerClassName={"pagination"}
+                    activeClassName={"active"} pageCount={15}/>
             </ResumeYourWork>
         </Wrapper>
     );

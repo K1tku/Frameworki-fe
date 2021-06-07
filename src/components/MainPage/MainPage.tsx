@@ -67,3 +67,4 @@ const MainPage: FC = () => {
 };
 
 export default MainPage;
+// DODAC PAGINACJE CZYLI PRZEWIJANIE STRON
