@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+::-webkit-scrollbar{
+  width: 0px;
+}
+
+.container {
+  display: flex;
+  overflow: scroll;
+  width: 100px;
+}
+
+.card{
+  flex-shrink: 0;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+
+}

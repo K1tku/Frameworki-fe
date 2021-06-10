@@ -104,7 +104,7 @@ export const TopBar: FC = () => {
                     }
                 </MenuWrapper>
 
-                <InputWrapper>
+                <InputWrapper>i
                     <SearchField>
                         <input type="text" placeholder="Search Legalcluster" style={{width:'500px', height:'20px'}}/>
                     </SearchField>

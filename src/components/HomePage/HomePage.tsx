@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 import { Wrapper } from '../StyledHelpers/Components';
@@ -12,7 +12,9 @@ import tauren from '../../media/icons/tauren.png';
 import {ExpandedMenuHP} from "../HomePage/ExpandedMenuHP";
 import ReactPaginate from 'react-paginate';
 import "./styleToPaginate.css"
-import ScrollMenu from 'react-horizontal-scrolling-menu';
+import "./../../App.css";
+
+
 
 
 const LatestPublications = styled.div`
@@ -72,7 +74,10 @@ const LeftSide = styled.div`
 
 
 
+
 export const HomePage: FC = () => {
+
+
     const [wrapperRef, dropdownOpen, toggleDropDown] = useDropdown();
 
     const menuHandler = () => {
@@ -119,6 +124,7 @@ export const HomePage: FC = () => {
                 <img style={{height:'230px', marginLeft:'10px', borderRadius:'5px'}} src={WorkspacesPhoto} alt={WorkspacesPhoto}/>
 
 
+
             </WorkSpaces>
             <ResumeYourWork>
                 <h1 style={{fontSize:'20px', color:'darkslategrey' }}>Resume Your Work</h1>
@@ -140,7 +146,6 @@ export const HomePage: FC = () => {
                     <ExpandedMenuHP/>
                     }
                 </MenuWrapper>
-
                 <ReactPaginate
                     previousLabel={"PREVIOUS"}
                     nextLabel={"NEXT"}
@@ -150,7 +155,8 @@ export const HomePage: FC = () => {
                     pageRangeDisplayed={3}
                     containerClassName={"pagination"}
                     activeClassName={"active"} pageCount={15}/>
-            </ResumeYourWork>
+
+        </ResumeYourWork>
         </Wrapper>
     );
 }
