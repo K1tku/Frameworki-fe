@@ -10,6 +10,8 @@ import sort from '../../media/icons/sort.jpg';
 import strzalki from '../../media/icons/strzalki.jpg';
 import cog from '../icons/cog.png';
 import search from "../icons/search.png";
+import followed from "../../media/icons/followed2.jpg"
+
 
 const TTbar = styled.div`
 
@@ -19,7 +21,7 @@ const Tbar = styled.div`
 
 `;
 
-const Content = styled.div`
+const Page = styled.div`
 
 `;
 const SearchField = styled.div`
@@ -36,7 +38,7 @@ const SearchButton = styled.div`
   padding: 3px;
   font-size: 30px;
   cursor: pointer;
-  margin-left: 1285px;
+  margin-left: 1340px;
   position: absolute;
   margin-top: -43px;
   `;
@@ -44,7 +46,8 @@ const SearchButton = styled.div`
 
 export const Entities: FC = () => {
     return (
-       <Wrapper>
+       <Wrapper style={{backgroundColor:'white', marginTop:'5px', marginLeft:'5px', width:'1595px'}}>
+
            <TTbar>
                <div>
                    <a style={{fontSize:'23px', position:'absolute', marginLeft:'25px', marginTop:'25px',}}>Entities</a>
@@ -55,22 +58,27 @@ export const Entities: FC = () => {
            </TTbar>
 
            <Tbar>
+               <img style={{position:'absolute', marginLeft:'110px' }} src={kropeczki} alt={kropeczki}/>
 
-               <img src={}/>
+               <img style={{position:'absolute',height:'30px', borderRadius:'5px', marginLeft:'20px' }} src={all} alt={all}/>
+
+               <img style={{position:'absolute', marginLeft:'150px'}} src={sort} alt={sort}/>
+
+                <img style={{height:'30px' ,position:'absolute', marginLeft:'1430px', marginTop:'10px',borderRadius:'5px', border:'1px, solid, blue', }} src ={followed} alt={followed}/>
 
                <SearchField>
-                   <input type="text" placeholder="Search..." style={{width:'150px', height:'30px', fontSize:'20px'}}/>
+                   <input type="text" placeholder="Search..." style={{width:'200px', height:'25px', fontSize:'20px'}}/>
                </SearchField>
 
                <SearchButton>
-                   <img style ={{height:'23px'}} src={search} alt="search" />
+                   <img style ={{height:'21px'}} src={search} alt="search" />
                </SearchButton>
 
            </Tbar>
 
-           <Content>
+           <Page>
 
-           </Content>
+           </Page>
 
        </Wrapper>
 
