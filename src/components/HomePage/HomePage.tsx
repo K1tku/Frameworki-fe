@@ -11,8 +11,9 @@ import WorkspacesPhoto from"../../media/photos/WorkspacesPhoto.jpg"
 import tauren from '../../media/icons/tauren.png';
 import {ExpandedMenuHP} from "../HomePage/ExpandedMenuHP";
 import ReactPaginate from 'react-paginate';
-import "./styleToPaginate.css"
+import "./HomePageStyled.css"
 import "./../../App.css";
+import {SMenu} from "./ScrollMenu";
 
 
 
@@ -117,6 +118,8 @@ export const HomePage: FC = () => {
             <br/><div style={{marginLeft:'40px'}}>
             <h1 style={{fontSize:'25px', color:'darkslategrey'}}>Workspaces</h1></div>
             <WorkSpaces>
+
+
 
                 <img style={{height:'230px'}} src={WorkspacesPhoto} alt={WorkspacesPhoto}/>
                 <img style={{height:'230px', marginLeft:'10px', borderRadius:'5px'}} src={WorkspacesPhoto} alt={WorkspacesPhoto}/>

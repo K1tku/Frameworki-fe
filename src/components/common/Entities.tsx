@@ -64,7 +64,7 @@ export const Entities: FC = () => {
 
                <img style={{position:'absolute', marginLeft:'150px'}} src={sort} alt={sort}/>
 
-                <img style={{height:'30px' ,position:'absolute', marginLeft:'1430px', marginTop:'10px',borderRadius:'5px', border:'1px, solid, blue', }} src ={followed} alt={followed}/>
+                <img style={{height:'30px' ,position:'absolute', marginLeft:'1430px', marginTop:'10px',borderRadius:'5px', border:'1px solid blue', }} src ={followed} alt={followed}/>
 
                <SearchField>
                    <input type="text" placeholder="Search..." style={{width:'200px', height:'25px', fontSize:'20px'}}/>
