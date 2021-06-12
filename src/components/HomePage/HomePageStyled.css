@@ -44,7 +44,7 @@
     padding: 10px;
     cursor: pointer;
 }
-workspaces > a {
+.workspaces > a {
     box-shadow: 0px 2px #d8dbe1;
     border-left: 10px solid #d8dbe1;
     border-right: 10px solid #d8dbe1;

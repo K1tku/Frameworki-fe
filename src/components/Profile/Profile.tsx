@@ -49,6 +49,21 @@ const AOF = styled.div`
   margin-left: 350px;
   margin-top: 1px;
 `;
+const Table1 = styled.div`
+border-spacing: 20px 2px;
+  padding: 10px;
+  text-align: left;
+`;
+const Table2 = styled.div`
+border-spacing: 50px 2px;
+  padding: 10px;
+  text-align: left;
+`;
+const Table3 = styled.div`
+border-spacing: 50px 2px;
+  padding: 10px;
+  text-align: left;
+`;
 
 
 
@@ -68,23 +83,55 @@ P2
             </PanelInformations>
 
             <SIP>
-                <a>Services & pojects</a>
+                <a style={{fontSize:'25px', marginLeft:'20px'}}>Services & pojects</a>
+               <br/><br/><a style={{marginLeft:'20px'}}>Corporate M&A and international acquisitions</a>
+                <br/><br/><a style={{fontSize:'20px', marginLeft:'20px'}}>Internal correspondants</a>
+
 
             </SIP>
 
             <Proposals>
-                <a>Proposals</a>
 
+                <Table1 style={{fontSize:'20px'}}>
+                    <a style={{fontSize:'25px', marginLeft:'20px'}}>Proposals</a>
+                    <br/><br/><tr style={{height:'2em'}}><th>Name</th><th>Entity</th><th>Location</th><th>Expertise</th><th>Date</th><th>Firm</th></tr>
+                    <tr><td>Operation Ti...</td><td>Renault Co...</td><td>France</td><td>#Tax</td><td>20/01/2018</td><td>Racine</td></tr>
+                    <tr><td>OP. Prometh...</td><td>Renault HQ</td><td>USA</td><td>#M&A</td><td>18/02/2019</td><td>Clifford chance</td></tr>
+                    <tr><td>OP. Latandre</td><td>Renault Br...</td><td>Italia</td><td>#Social</td><td>18/02/2019</td><td>SVZ</td></tr>
+
+                    <a style={{color:'lightblue', marginLeft:'600px'}}>See more proposals</a>
+                </Table1>
             </Proposals>
+
+
 
             <InternalReviews>
 
-                <a>Internal reviews</a>
+                <Table2 style={{fontSize:'20px'}}>
+                    <a style={{fontSize:'25px', marginLeft:'20px'}}>Internal reviews</a>
+                    <br/><br/><tr style={{height:'2em'}}><th>Name</th><th>Entity</th><th>Location</th><th>Expertise</th><th>Date</th></tr>
+                    <tr><td>Operation Ti...</td><td>Renault Co...</td><td>France</td><th>#Tax</th><th>20/01/2018</th></tr>
+                    <tr><td>OP. Prometh...</td><td>Renault HQ</td><td>USA</td><th>#M&A</th><th>18/02/2019</th></tr>
+                    <tr><td>OP. Latandre</td><td>Renault Br...</td><td>Italia</td><th>#Social</th><th>18/02/2019</th></tr>
+
+                   <br/><a style={{fontSize:'25px', marginLeft:'20px'}}>See more Reviews</a>
+
+                </Table2>
+
+
             </InternalReviews>
 
             <AOF>
 
-                <a>Amount od fees</a>
+                <Table3 style={{fontSize:'20px'}}>
+                    <a style={{fontSize:'25px', marginLeft:'20px'}}>Amount od fees</a>
+                    <br/><br/><tr><th>Year</th><th>Cost center</th><th>Total amount</th><th>Law firm</th></tr>
+                    <tr><td>2019</td><td>CS 153</td><td>3 500$</td><th>Clifford chance</th></tr>
+                    <tr><td>2018</td><td>CS 153</td><td>9 500$</td><th>Linklaters</th></tr>
+                    <tr><td>2017</td><td>CS 47</td><td>10 500$</td><th>Linklaters</th></tr>
+                    <tr><td> </td><td>CS 153</td><td>19 500$</td><th>Linklaters</th></tr>
+                    <tr><td> </td><td>CS 32</td><td>15 500$</td><th>Linklaters</th></tr>
+                </Table3>
             </AOF>
 
 

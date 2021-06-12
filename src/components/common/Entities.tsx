@@ -87,30 +87,34 @@ export const Entities: FC = () => {
 
            <Page>
 
-               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
 
 
            </Page>
