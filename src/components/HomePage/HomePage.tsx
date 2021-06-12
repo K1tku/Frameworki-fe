@@ -14,6 +14,7 @@ import ReactPaginate from 'react-paginate';
 import "./HomePageStyled.css"
 import "./../../App.css";
 import {SMenu} from "./ScrollMenu";
+import ScrollMenu from 'react-horizontal-scrolling-menu';
 
 
 
@@ -118,14 +119,11 @@ export const HomePage: FC = () => {
             <br/><div style={{marginLeft:'40px'}}>
             <h1 style={{fontSize:'25px', color:'darkslategrey'}}>Workspaces</h1></div>
             <WorkSpaces>
+                <SMenu/>
 
 
 
-                <img style={{height:'230px'}} src={WorkspacesPhoto} alt={WorkspacesPhoto}/>
-                <img style={{height:'230px', marginLeft:'10px', borderRadius:'5px'}} src={WorkspacesPhoto} alt={WorkspacesPhoto}/>
-                <img style={{height:'230px', marginLeft:'10px', borderRadius:'5px'}} src={WorkspacesPhoto} alt={WorkspacesPhoto}/>
-                <img style={{height:'230px', marginLeft:'10px', borderRadius:'5px'}} src={WorkspacesPhoto} alt={WorkspacesPhoto}/>
-                <img style={{height:'230px', marginLeft:'10px', borderRadius:'5px'}} src={WorkspacesPhoto} alt={WorkspacesPhoto}/>
+
 
 
 

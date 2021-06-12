@@ -11,6 +11,8 @@ import strzalki from '../../media/icons/strzalki.jpg';
 import cog from '../icons/cog.png';
 import search from "../icons/search.png";
 import followed from "../../media/icons/followed2.jpg"
+import WCS from "../../media/icons/WCS.jpg"
+import SBL from "../../media/icons/SBL.jpg"
 
 
 const TTbar = styled.div`
@@ -58,11 +60,18 @@ export const Entities: FC = () => {
            </TTbar>
 
            <Tbar>
-               <img style={{position:'absolute', marginLeft:'110px' }} src={kropeczki} alt={kropeczki}/>
 
-               <img style={{position:'absolute',height:'30px', borderRadius:'5px', marginLeft:'20px' }} src={all} alt={all}/>
+               <img style={{position:'absolute', marginLeft:'340px', marginTop:'13px'}} src={share} alt={share}/>
 
-               <img style={{position:'absolute', marginLeft:'150px'}} src={sort} alt={sort}/>
+               <img style={{position:'absolute', marginLeft:'300px', marginTop:'12px',borderLeft:'1px solid lightgrey', borderRight:'1px solid lightgrey'}} src={strzalki} alt={strzalki}/>
+
+               <img style={{position:'absolute', marginLeft:'210px', marginTop:'12px'}} src={filters} alt={filters}/>
+
+               <img style={{position:'absolute', marginLeft:'110px', marginTop:'10px' }} src={kropeczki} alt={kropeczki}/>
+
+               <img style={{position:'absolute',height:'30px', borderRadius:'5px', marginLeft:'20px', marginTop:'10px' }} src={all} alt={all}/>
+
+               <img style={{position:'absolute', marginLeft:'150px', marginTop:'10px',borderLeft:'1px solid lightgrey'}} src={sort} alt={sort}/>
 
                 <img style={{height:'30px' ,position:'absolute', marginLeft:'1430px', marginTop:'10px',borderRadius:'5px', border:'1px solid blue', }} src ={followed} alt={followed}/>
 
@@ -77,6 +86,32 @@ export const Entities: FC = () => {
            </Tbar>
 
            <Page>
+
+               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px'}} src={SBL} alt={SBL}/>
+
 
            </Page>
 

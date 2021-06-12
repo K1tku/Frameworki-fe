@@ -2,32 +2,44 @@ import React, { Component } from 'react';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 import './HomePageStyled.css';
 
+import WorkspacesPhoto from"../../media/photos/WorkspacesPhoto.jpg"
+import styled from "styled-components";
 
-const list = [
-    { name: "item1", path: "../../media/photos/WorkspacesPhoto.jpg" },
-    { name: "item2", path: "../../media/photos/WorkspacesPhoto.jpg" },
-    { name: "item3", path: "../../media/photos/WorkspacesPhoto.jpg" },
-    { name: "item4", path: "../../media/photos/WorkspacesPhoto.jpg" },
-    { name: "item5", path: "../../media/photos/WorkspacesPhoto.jpg" },
-    { name: "item6", path: "../../media/photos/WorkspacesPhoto.jpg" },
-    { name: "item7", path: "../../media/photos/WorkspacesPhoto.jpg" },
-    { name: "item8", path: "../../media/photos/WorkspacesPhoto.jpg" },
-    { name: "item9", path: "../../media/photos/WorkspacesPhoto.jpg" }
+
+const Content = styled.div`
+  height: 230px;
+  margin-left: 10px;
+  img {
+    height: 230px;
+    border-radius:10px;
+  }
+`
+
+const list: any[] = [
+    { name: WorkspacesPhoto },
+    { name: WorkspacesPhoto },
+    { name: WorkspacesPhoto },
+    { name: WorkspacesPhoto },
+    { name: WorkspacesPhoto },
+
+
 ];
 
 
+// One item component
+// selected prop will be passed
 const MenuItem = ({text, selected}: {text: any, selected: any}) => {
     return <div
         className={`menu-item ${selected ? 'active' : ''}`}
-    >{text}</div>;
+    ><img style={{ boxShadow: "0px 2px #d8dbe1", borderLeft: "1px solid #d8dbe1", borderRight: "1px solid #d8dbe1"}} src={text}></img></div>;
 };
 
 
-export const SMenu = (list: any[], selected: any)=>
-    list.map((el: any) => {
+export const Menu = (list: any[], selected: any) =>
+    list.map((el) => {
         const {name} = el;
 
-        return <MenuItem text={name} key={name} selected={selected} />;
+        return <MenuItem text={name} selected={selected} />;
     });
 
 
@@ -45,12 +57,12 @@ const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
 
 const selected = 'item1';
 
-class App extends Component {
-    private menuItems: any[];
+export class SMenu extends Component {
+    private menuItems: any;
     constructor(props: any) {
         super(props);
-
-        this.menuItems = SMenu(list, selected);
+        // call it again if items count changes
+        this.menuItems = Menu(list, selected);
     }
 
     state = {
@@ -64,18 +76,20 @@ class App extends Component {
 
     render() {
         const { selected } = this.state;
-
+        // Create menu from items
         const menu = this.menuItems;
 
         return (
-            <div className="App">
-                <ScrollMenu
-                    data={menu}
-                    arrowLeft={ArrowLeft}
-                    arrowRight={ArrowRight}
-                    selected={selected}
-                    onSelect={this.onSelect}
-                />
+            <div className="workspaces">
+                <Content>
+                    <ScrollMenu
+                        data={menu}
+                        arrowLeft={ArrowLeft}
+                        arrowRight={ArrowRight}
+                        selected={selected}
+                        onSelect={this.onSelect}
+                    />
+                </Content>
             </div>
         );
     }
