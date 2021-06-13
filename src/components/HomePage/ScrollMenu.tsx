@@ -16,11 +16,14 @@ const Content = styled.div`
 `
 
 const list: any[] = [
+
     { name: WorkspacesPhoto },
     { name: WorkspacesPhoto },
     { name: WorkspacesPhoto },
     { name: WorkspacesPhoto },
     { name: WorkspacesPhoto },
+    { name: WorkspacesPhoto },
+
 
 
 ];
@@ -29,9 +32,9 @@ const list: any[] = [
 // One item component
 // selected prop will be passed
 const MenuItem = ({text, selected}: {text: any, selected: any}) => {
-    return <div
+    return <a href="/Workspace"><div
         className={`menu-item ${selected ? 'active' : ''}`}
-    ><img style={{ boxShadow: "0px 2px #d8dbe1", borderLeft: "1px solid #d8dbe1", borderRight: "1px solid #d8dbe1"}} src={text}></img></div>;
+    ><img style={{ boxShadow: "0px 2px #d8dbe1", borderLeft: "1px solid #d8dbe1", borderRight: "1px solid #d8dbe1"}} src={text}></img></div></a>;
 };
 
 
@@ -90,6 +93,7 @@ export class SMenu extends Component {
                         onSelect={this.onSelect}
                     />
                 </Content>
+
             </div>
         );
     }

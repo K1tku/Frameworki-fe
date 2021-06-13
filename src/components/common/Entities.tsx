@@ -53,27 +53,27 @@ export const Entities: FC = () => {
            <TTbar>
                <div>
                    <a style={{fontSize:'23px', position:'absolute', marginLeft:'25px', marginTop:'25px',}}>Entities</a>
-                    <img style={{height:'16px' ,position:'absolute', marginLeft:'108px', marginTop:'28px',}} src={cog} alt={cog}/>
-                    <img style={{height:'35px' ,position:'absolute', marginLeft:'1450px', marginTop:'28px', borderRadius:'4px'}} src={mosaic} alt={mosaic}/>
+                    <img style={{height:'16px' ,position:'absolute', marginLeft:'108px', marginTop:'28px',cursor:'pointer',}} src={cog} alt={cog}/>
+                    <img style={{height:'35px' ,position:'absolute', marginLeft:'1450px', marginTop:'28px', borderRadius:'4px',cursor:'pointer'}} src={mosaic} alt={mosaic}/>
                </div>
 
            </TTbar>
 
            <Tbar>
 
-               <img style={{position:'absolute', marginLeft:'340px', marginTop:'13px'}} src={share} alt={share}/>
+               <img style={{position:'absolute', marginLeft:'340px', marginTop:'13px',cursor:'pointer'}} src={share} alt={share}/>
 
-               <img style={{position:'absolute', marginLeft:'300px', marginTop:'12px',borderLeft:'1px solid lightgrey', borderRight:'1px solid lightgrey'}} src={strzalki} alt={strzalki}/>
+               <img style={{position:'absolute', marginLeft:'300px', marginTop:'12px',cursor:'pointer',borderLeft:'1px solid lightgrey', borderRight:'1px solid lightgrey'}} src={strzalki} alt={strzalki}/>
 
-               <img style={{position:'absolute', marginLeft:'210px', marginTop:'12px'}} src={filters} alt={filters}/>
+               <img style={{position:'absolute', marginLeft:'210px', marginTop:'12px',cursor:'pointer'}} src={filters} alt={filters}/>
 
-               <img style={{position:'absolute', marginLeft:'110px', marginTop:'10px' }} src={kropeczki} alt={kropeczki}/>
+               <img style={{position:'absolute', marginLeft:'110px', marginTop:'10px',cursor:'pointer' }} src={kropeczki} alt={kropeczki}/>
 
-               <img style={{position:'absolute',height:'30px', borderRadius:'5px', marginLeft:'20px', marginTop:'10px' }} src={all} alt={all}/>
+               <img style={{position:'absolute',height:'30px', borderRadius:'5px', marginLeft:'20px', marginTop:'10px',cursor:'pointer' }} src={all} alt={all}/>
 
-               <img style={{position:'absolute', marginLeft:'150px', marginTop:'10px',borderLeft:'1px solid lightgrey'}} src={sort} alt={sort}/>
+               <img style={{position:'absolute', marginLeft:'150px', marginTop:'10px',borderLeft:'1px solid lightgrey',cursor:'pointer'}} src={sort} alt={sort}/>
 
-                <img style={{height:'30px' ,position:'absolute', marginLeft:'1430px', marginTop:'10px',borderRadius:'5px', border:'1px solid blue', }} src ={followed} alt={followed}/>
+                <img style={{height:'30px' ,position:'absolute', marginLeft:'1430px', marginTop:'10px',borderRadius:'5px', border:'1px solid blue',cursor:'pointer', }} src ={followed} alt={followed}/>
 
                <SearchField>
                    <input type="text" placeholder="Search..." style={{width:'200px', height:'25px', fontSize:'20px'}}/>
@@ -87,34 +87,34 @@ export const Entities: FC = () => {
 
            <Page>
 
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={WCS} alt={WCS}/>
-               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={WCS} alt={WCS}/>
+               <img style={{height:'120px', borderRadius:'5px', boxShadow:'1px 2px 1px lightgrey', marginLeft:'4px',cursor:'pointer'}} src={SBL} alt={SBL}/>
 
 
            </Page>

@@ -19,6 +19,7 @@ import {Publications} from "../common/Publications";
 import {YourNetwork} from "../common/YourNetwork";
 import {YourPublications} from "../common/YourPublications";
 import {Profile} from "../Profile/Profile";
+import {Workspace} from "../common/Workspace";
 
 
 const Content = styled.div`
@@ -55,6 +56,9 @@ const MainPage: FC = () => {
                     </Route>
                     <Route path="/profile" exact>
                         <Profile/>
+                    </Route>
+                    <Route path="/workspace" exact>
+                        <Workspace/>
                     </Route>
 
                     <HomePage/>
