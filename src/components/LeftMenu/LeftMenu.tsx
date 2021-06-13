@@ -57,6 +57,7 @@ const PEE = styled.div`
 `;
 
 
+
 export const LeftMenu: FC = () => {
 
     return (
@@ -64,7 +65,7 @@ export const LeftMenu: FC = () => {
         <Wrapper>
             <InnerWrapper>
                 <Photo>
-                <img src = {tauren} alt={tauren} height="90px" style={{borderRadius:'40px'}} />
+                    <a href="/Profile"><img src = {tauren} alt={tauren} height="90px" style={{borderRadius:'40px'}} /></a>
                 </Photo>
                 <NameAndTitle>
                     <div>

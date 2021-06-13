@@ -121,8 +121,7 @@ export const HomePage: FC = () => {
             <h1 style={{fontSize:'25px', color:'darkslategrey'}}>Workspaces</h1></div>
             <WorkSpaces>
                 <SMenu/>
-                <a href="/Workspace"><button style={{border:'none', background:'none', width:'1200px'}}>
-                </button></a>
+
 
             </WorkSpaces>
             <ResumeYourWork>
