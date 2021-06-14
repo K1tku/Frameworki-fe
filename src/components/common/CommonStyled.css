@@ -1,3 +1,29 @@
-.table{
-    border-spacing: 100px;
+.pagination {
+    margin: 15px auto;
+    display: flex;
+    list-style: none;
+    outline: none;
+    margin-left: 310px;
+}
+.pagination > .active > a{
+    background-color: lightcoral ;
+    border-color: lightcoral ;
+    color: #fff;
+}
+.pagination > li > a{
+
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    background-color: lightcoral ;
+    border-color: lightcoral;
+    outline: none ;
+}
+.pagination > li > a, .pagination > li > span{
+    color: lightcoral;
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-radius: unset
 }
