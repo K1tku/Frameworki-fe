@@ -19,7 +19,7 @@ import {Publications} from "../common/Publications";
 import {YourNetwork} from "../common/YourNetwork";
 import {YourPublications} from "../common/YourPublications";
 import {Profile} from "../Profile/Profile";
-import {Workspace} from "../common/Workspace";
+import {Workspace} from "../common/Workspace/Workspace";
 
 
 const Content = styled.div`

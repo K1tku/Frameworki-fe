@@ -1,20 +1,27 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { Wrapper } from '../StyledHelpers/Components';
+import { Wrapper } from '../../StyledHelpers/Components';
 
-import WCSAS from "../../media/icons/WCSAS.jpg"
-import followed from "../../media/icons/followed2.jpg";
-import search from "../icons/search.png";
-import allWorks from "../../media/icons/allWorks.jpg";
-import sas from "../../media/icons/sasWorks.jpg";
-import sarl from "../../media/icons/sarlWorks.jpg";
-import communities from "../../media/icons/communitiesWorks.jpg";
-import poa from "../../media/icons/poaWorks.jpg";
-import survey from "../../media/icons/surveyWorks.jpg";
-import kropeczki from "../../media/icons/kropeczki.jpg";
-import secondary from "../../media/icons/secWorks.jpg";
+import WCSAS from "../../../media/icons/WCSAS.jpg"
+import followed from "../../../media/icons/followed2.jpg";
+import search from "../../icons/search.png";
+import allWorks from "../../../media/icons/allWorks.jpg";
+import sas from "../../../media/icons/sasWorks.jpg";
+import sarl from "../../../media/icons/sarlWorks.jpg";
+import communities from "../../../media/icons/communitiesWorks.jpg";
+import poa from "../../../media/icons/poaWorks.jpg";
+import survey from "../../../media/icons/surveyWorks.jpg";
+import kropeczki from "../../../media/icons/kropeczki.jpg";
+import secondary from "../../../media/icons/secWorks.jpg";
 import ReactPaginate from "react-paginate";
-import "./CommonStyled.css"
+import "../CommonStyled.css"
+import explore from "../../../media/icons/explore.jpg";
+import structure from "../../../media/icons/structure.jpg";
+import define from "../../../media/icons/define.jpg";
+import entities from "../../icons/entities.png";
+import cog from "../../icons/cog.png";
+import supplier from "../../../media/icons/photo2.jpg";
+
 
 
 
@@ -23,23 +30,45 @@ const LatestUpdates = styled.div`
     background-color: #282c34;
   margin-left: 200px;
   width: 1000px;
+  margin-top: -75px;
+  
  
 
 `;
 
 const StartWorking = styled.div`
-  background-color: #282c34;
-  margin-left: 15px;
+  background-color: gray;
+  margin-left: 175px;
+  width: 1050px;
+  height: 300px; 
+  margin-bottom: 1px;
+  border-radius: 5px;
+  border: 1px solid white;
+`;
+
+const Top = styled.div`
+  background-color: white;
+  margin-left: 200px;
+  width: 1000px;
+  border-radius: 5px;
+  height: 250px;
+  margin-bottom: 20px;
+  
+`;
+
+const Photo = styled.div`
+  margin-top: 30px;
+  height: 150px;
   width: 1000px;
   
 `;
 
-const Top = styled.div`
-  background-color: #282c34;
-  margin-left: 15px;
+const Text = styled.div`
+  height: 100px;
   width: 1000px;
-  
 `;
+
+
 const LatestUpdatesTop = styled.div`
   background-color: #282c34;
   
@@ -79,10 +108,28 @@ export const Workspace: FC = () => {
     return (
         <Wrapper>
             <Top>
+                <Photo style={{borderRadius:'5px'}}>
+                    <img style={{borderTopRightRadius:'5px', borderTopLeftRadius:'5px'}} src = {supplier} alt = {supplier}/>
+
+                </Photo>
+
+                <Text>
+                    <img style={{height:'50px', marginLeft:'20px', marginTop:'20px'}} src = {entities} alt = {entities}/>
+                    <a style={{fontSize:'25px',position:'absolute', marginTop:'10px', marginLeft:'20px'}}>Supplier contract</a>
+                    <img style={{height:'20px', position:'absolute', marginTop:'10px', marginLeft:'900px'}} src={cog} alt={cog}/>
+                    <a style={{fontSize:'18px', marginLeft:'10px'}}>Workspace purpose and a bit of context. This much needed description is here to remind people where they are, if they are new or have poor memory.</a>
+
+
+                </Text>
 
             </Top>
 
             <StartWorking>
+                <br/><a style={{fontSize:'30px', marginLeft:'30px', marginTop:'10px', color:'lightgray'}}>Start working on corporate matters</a>
+                <a style={{fontSize:'30px', marginLeft:'500px', color:'lightgray'}}>Hide</a>
+                <img style={{height:'210px', marginLeft:'22px', marginTop:'20px', borderRadius:'5px'}} src={explore} alt={explore}/>
+                <img style={{height:'210px', marginLeft:'22px', marginTop:'20px', borderRadius:'5px'}} src={structure} alt={structure}/>
+                <img style={{height:'210px', marginLeft:'22px', marginTop:'20px', borderRadius:'5px'}} src={define} alt={define}/>
 
             </StartWorking>
 
