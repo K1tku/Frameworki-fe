@@ -4,7 +4,7 @@ import './HomePageStyled.css';
 
 import WorkspacesPhoto from"../../media/photos/WorkspacesPhoto.jpg"
 import styled from "styled-components";
-
+import corporate from"../../media/photos/corporate.jpg"
 
 const Content = styled.div`
   height: 230px;
@@ -17,10 +17,9 @@ const Content = styled.div`
 
 const list: any[] = [
 
-    { name: WorkspacesPhoto },
-    { name: WorkspacesPhoto },
-    { name: WorkspacesPhoto },
-    { name: WorkspacesPhoto },
+    { name: WorkspacesPhoto, href : "Workspace" },
+    { name: corporate,href : "WorkspaceCorporate"},
+    { name: WorkspacesPhoto, href : "Workspace" },
     { name: WorkspacesPhoto },
     { name: WorkspacesPhoto },
 
@@ -32,7 +31,7 @@ const list: any[] = [
 // One item component
 // selected prop will be passed
 const MenuItem = ({text, selected}: {text: any, selected: any}) => {
-    return <a href="/Workspace"><div
+    return <a href={"WorkspaceCorporate"}><div
         className={`menu-item ${selected ? 'active' : ''}`}
     ><img style={{ boxShadow: "0px 2px #d8dbe1", borderLeft: "1px solid #d8dbe1", borderRight: "1px solid #d8dbe1"}} src={text}></img></div></a>;
 };
