@@ -17,9 +17,9 @@ const Content = styled.div`
 
 const list: any[] = [
 
-    { name: WorkspacesPhoto, href : "Workspace" },
-    { name: corporate,href : "WorkspaceCorporate"},
-    { name: WorkspacesPhoto, href : "Workspace" },
+    { name: WorkspacesPhoto},
+    { name: corporate},
+    { name: WorkspacesPhoto},
     { name: WorkspacesPhoto },
     { name: WorkspacesPhoto },
 
@@ -28,8 +28,7 @@ const list: any[] = [
 ];
 
 
-// One item component
-// selected prop will be passed
+
 const MenuItem = ({text, selected}: {text: any, selected: any}) => {
     return <a href={"WorkspaceCorporate"}><div
         className={`menu-item ${selected ? 'active' : ''}`}
@@ -63,7 +62,7 @@ export class SMenu extends Component {
     private menuItems: any;
     constructor(props: any) {
         super(props);
-        // call it again if items count changes
+
         this.menuItems = Menu(list, selected);
     }
 
@@ -78,7 +77,7 @@ export class SMenu extends Component {
 
     render() {
         const { selected } = this.state;
-        // Create menu from items
+
         const menu = this.menuItems;
 
         return (

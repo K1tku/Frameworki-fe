@@ -20,7 +20,7 @@ import structure from "../../../media/icons/structure.jpg";
 import define from "../../../media/icons/define.jpg";
 import entities from "../../icons/entities.png";
 import cog from "../../icons/cog.png";
-import corporateHol from "../../../media/photos/corporateHol.jpg";
+import realestatecontracts from "../../../media/photos/realestatecontracts.jpg";
 
 
 
@@ -104,18 +104,18 @@ const SearchButton = styled.div`
 
 
 
-export const WorkspaceCorporate: FC = () => {
+export const WorkspaceRealestatecontracts: FC = () => {
     return (
         <Wrapper>
             <Top>
                 <Photo style={{borderRadius:'5px'}}>
-                    <img style={{borderTopRightRadius:'5px', borderTopLeftRadius:'5px'}} src = {corporateHol} alt = {corporateHol}/>
+                    <img style={{borderTopRightRadius:'5px', borderTopLeftRadius:'5px'}} src = {realestatecontracts} alt = {realestatecontracts}/>
 
                 </Photo>
 
                 <Text>
                     <img style={{height:'50px', marginLeft:'20px', marginTop:'20px'}} src = {entities} alt = {entities}/>
-                    <a style={{fontSize:'25px',position:'absolute', marginTop:'10px', marginLeft:'20px'}}>Corporate holdings</a>
+                    <a style={{fontSize:'25px',position:'absolute', marginTop:'10px', marginLeft:'20px'}}>Real estate contracts</a>
                     <img style={{height:'20px', position:'absolute', marginTop:'10px', marginLeft:'900px'}} src={cog} alt={cog}/>
                     <a style={{fontSize:'18px', marginLeft:'10px'}}>Workspace purpose and a bit of context. This much needed description is here to remind people where they are, if they are new or have poor memory.</a>
 

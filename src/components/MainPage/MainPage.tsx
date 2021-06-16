@@ -21,6 +21,9 @@ import {YourPublications} from "../common/YourPublications";
 import {Profile} from "../Profile/Profile";
 import {Workspace} from "../common/Workspace/Workspace";
 import {WorkspaceCorporate} from "../common/Workspace/WorkspaceCorporate";
+import {WorkspaceClientconract} from "../common/Workspace/WorkspaceClientconract";
+import {WorkspaceGroupNorms} from "../common/Workspace/WorkspaceGroupNorms";
+import {WorkspaceRealestatecontracts} from "../common/Workspace/WorkspaceRealestatecontracts";
 
 
 const Content = styled.div`
@@ -63,6 +66,15 @@ const MainPage: FC = () => {
                     </Route>
                     <Route path="/workspaceCorporate" exact>
                         <WorkspaceCorporate/>
+                    </Route>
+                    <Route path="/workspaceClientconract" exact>
+                        <WorkspaceClientconract/>
+                    </Route>
+                    <Route path="/workspaceGroupNorms" exact>
+                        <WorkspaceGroupNorms/>
+                    </Route>
+                    <Route path="/workspaceRealestatecontracts" exact>
+                        <WorkspaceRealestatecontracts/>
                     </Route>
 
                     <HomePage/>

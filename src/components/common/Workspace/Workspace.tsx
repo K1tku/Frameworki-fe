@@ -20,7 +20,7 @@ import structure from "../../../media/icons/structure.jpg";
 import define from "../../../media/icons/define.jpg";
 import entities from "../../icons/entities.png";
 import cog from "../../icons/cog.png";
-import supplier from "../../../media/icons/photo2.jpg";
+import supplier from "../../../media/photos/photo2.jpg";
 
 
 
