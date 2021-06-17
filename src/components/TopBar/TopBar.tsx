@@ -14,7 +14,7 @@ import comments from '../icons/comments.png';
 import bell from '../icons/bell.png';
 import useDropdown from "react-dropdown-hook";
 import arrowDown from "../icons/arrow-down.png"
-
+import { Badge } from '@material-ui/core';
 
 const InnerWrapper = styled.div`
   height: 40px;
@@ -29,7 +29,7 @@ const InnerWrapper = styled.div`
 const RightIcons = styled.div`
   display: grid;
   grid-template-columns: repeat(5,auto);
-  grid-gap: 10px;
+  grid-gap: 20px;
   
 `;
 
@@ -115,9 +115,9 @@ export const TopBar: FC = () => {
                 </InputWrapper>
 
                 <RightIcons>
-                    <img src={house} alt="house"/>
-                    <img src={comments} alt="comments"/>
-                    <img src={bell} alt="bell"/>
+                    <Badge color="secondary" badgeContent={5} showZero> <img style={{cursor:'pointer'}} src={house} alt="house"/></Badge>
+                    <Badge color="secondary" badgeContent={9} showZero><img style={{cursor:'pointer'}} src={comments} alt="comments"/></Badge>
+                        <Badge color="secondary" badgeContent={3} showZero><img style={{cursor:'pointer'}} src={bell} alt="bell"/></Badge>
                 </RightIcons>
             </InnerWrapper>
         </Wrapper>

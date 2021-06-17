@@ -4,7 +4,10 @@ import './HomePageStyled.css';
 
 import WorkspacesPhoto from"../../media/photos/WorkspacesPhoto.jpg"
 import styled from "styled-components";
-import corporate from"../../media/photos/corporate.jpg"
+import corporate from"../../media/photos/corporate.jpg";
+import realestatecontracts from "../../media/photos/wrealestatecontracts.jpg";
+import clientcontract from "../../media/photos/wclientcontract.jpg";
+import groupnorms from "../../media/photos/wgroupnorms.jpg";
 
 const Content = styled.div`
   height: 230px;
@@ -19,9 +22,9 @@ const list: any[] = [
 
     { name: WorkspacesPhoto},
     { name: corporate},
-    { name: WorkspacesPhoto},
-    { name: WorkspacesPhoto },
-    { name: WorkspacesPhoto },
+    { name: realestatecontracts},
+    { name: clientcontract },
+    { name: groupnorms },
 
 
 
