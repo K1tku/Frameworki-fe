@@ -2,9 +2,11 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { Wrapper } from '../StyledHelpers/Components';
 import tauren from "../../media/icons/tauren.png";
-import message from "../../media/icons/message.jpg"
-import user from "../../media/icons/user.png"
-import attach from "../../media/icons/attach.png"
+import message from "../../media/icons/message.jpg";
+import user from "../../media/icons/user.png";
+import attach from "../../media/icons/attach.png";
+
+
 
 const Panel = styled.div`
 background-color: white;
@@ -95,6 +97,7 @@ export const Profile: FC = () => {
     return (
         <Wrapper>
             <Panel>
+
 P1
             </Panel>
 

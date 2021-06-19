@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 import './HomePageStyled.css';
 
-import WorkspacesPhoto from"../../media/photos/WorkspacesPhoto.jpg"
+import Workspace from"../../media/photos/WorkspacesPhoto.jpg"
 import styled from "styled-components";
-import corporate from"../../media/photos/corporate.jpg";
-import realestatecontracts from "../../media/photos/wrealestatecontracts.jpg";
-import clientcontract from "../../media/photos/wclientcontract.jpg";
-import groupnorms from "../../media/photos/wgroupnorms.jpg";
+import Workspacecorporate from"../../media/photos/corporate.jpg";
+import Workspacerealestatecontracts from "../../media/photos/wrealestatecontracts.jpg";
+import Workspaceclientcontract from "../../media/photos/wclientcontract.jpg";
+import Workspacegroupnorms from "../../media/photos/wgroupnorms.jpg";
 
 const Content = styled.div`
   height: 230px;
@@ -20,11 +20,12 @@ const Content = styled.div`
 
 const list: any[] = [
 
-    { name: WorkspacesPhoto},
-    { name: corporate},
-    { name: realestatecontracts},
-    { name: clientcontract },
-    { name: groupnorms },
+    { name: Workspace },
+    { name: Workspacecorporate},
+    { name: Workspacerealestatecontracts},
+    { name: Workspaceclientcontract },
+    { name: Workspacegroupnorms },
+
 
 
 
@@ -33,9 +34,10 @@ const list: any[] = [
 
 
 const MenuItem = ({text, selected}: {text: any, selected: any}) => {
-    return <a href={"WorkspaceCorporate"}><div
+    return <a ><div
         className={`menu-item ${selected ? 'active' : ''}`}
     ><img style={{ boxShadow: "0px 2px #d8dbe1", borderLeft: "1px solid #d8dbe1", borderRight: "1px solid #d8dbe1"}} src={text}></img></div></a>;
+
 };
 
 
@@ -43,7 +45,7 @@ export const Menu = (list: any[], selected: any) =>
     list.map((el) => {
         const {name} = el;
 
-        return <MenuItem text={name} selected={selected} />;
+        return <MenuItem text={name} selected={selected}/>;
     });
 
 

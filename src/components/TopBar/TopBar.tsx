@@ -115,7 +115,7 @@ export const TopBar: FC = () => {
                 </InputWrapper>
 
                 <RightIcons>
-                    <Badge color="secondary" badgeContent={5} showZero> <img style={{cursor:'pointer'}} src={house} alt="house"/></Badge>
+                    <a href="/HomePage"><img style={{cursor:'pointer'}} src={house} alt="house"/></a>
                     <Badge color="secondary" badgeContent={9} showZero><img style={{cursor:'pointer'}} src={comments} alt="comments"/></Badge>
                         <Badge color="secondary" badgeContent={3} showZero><img style={{cursor:'pointer'}} src={bell} alt="bell"/></Badge>
                 </RightIcons>

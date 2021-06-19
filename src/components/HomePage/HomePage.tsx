@@ -7,15 +7,13 @@ import arrowDown from "../icons/arrow-down.png"
 import useDropdown from "react-dropdown-hook";
 import building from "../../media/photos/building-images.jpg"
 import writing from "../../media/photos/writing.jpg"
-import WorkspacesPhoto from"../../media/photos/WorkspacesPhoto.jpg"
 import tauren from '../../media/icons/tauren.png';
 import {ExpandedMenuHP} from "../HomePage/ExpandedMenuHP";
-import ReactPaginate from 'react-paginate';
 import "./HomePageStyled.css"
 import "./../../App.css";
 import {SMenu} from "./ScrollMenu";
-import ScrollMenu from 'react-horizontal-scrolling-menu';
-import {Button} from "react-native";
+import App from "./Paginate"
+
 
 
 
@@ -73,6 +71,10 @@ const MenuWrapper = styled.div`
 `;
 
 const LeftSide = styled.div`
+
+`;
+
+const Footer = styled.div`
 
 `;
 
@@ -144,17 +146,14 @@ export const HomePage: FC = () => {
                     <ExpandedMenuHP/>
                     }
                 </MenuWrapper>
-                <ReactPaginate
-                    previousLabel={"PREVIOUS"}
-                    nextLabel={"NEXT"}
-                    breakLabel={"..."}
-                    breakClassName={"break-me"}
-                    marginPagesDisplayed={2}
-                    pageRangeDisplayed={3}
-                    containerClassName={"pagination"}
-                    activeClassName={"active"} pageCount={15}/>
+                <App/>
+
 
         </ResumeYourWork>
+            <Footer>
+                .
+            </Footer>
+
         </Wrapper>
     );
 }
