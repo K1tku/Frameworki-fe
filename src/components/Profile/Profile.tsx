@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, Component } from 'react';
 import styled from 'styled-components';
 import { Wrapper } from '../StyledHelpers/Components';
 import tauren from "../../media/icons/tauren.png";
@@ -106,9 +106,15 @@ width: 180px;
   height: 180px;
 `;
 
+const SearchField = styled.div`
+  width: 250px;
+  position: absolute;
+  margin-left: 30px;
+`;
 
 
-export const Profile: FC = () => {
+export const Profile: FC  = () => {
+
     return (
         <Wrapper>
             <Panel>
@@ -127,10 +133,16 @@ export const Profile: FC = () => {
                 </ZdjProfile>
 
 
+
             </Panel>
 
             <Panel2>
-P2
+
+                <SearchField>
+                    <input type="text" style={{height:'25px', border:'none', backgroundColor:'#e6f0f3', borderRadius:'5px', fontSize:'20px', color:'#7db3c1', width:'150px'}}/>
+
+
+                </SearchField>
             </Panel2>
 
             <PanelInformations>
