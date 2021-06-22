@@ -14,23 +14,25 @@ import survey from "../../../media/icons/surveyWorks.jpg";
 import kropeczki from "../../../media/icons/kropeczki.jpg";
 import secondary from "../../../media/icons/secWorks.jpg";
 import ReactPaginate from "react-paginate";
-import "../CommonStyled.css"
+import "./Pagination.css"
 import explore from "../../../media/icons/explore.jpg";
 import structure from "../../../media/icons/structure.jpg";
 import define from "../../../media/icons/define.jpg";
 import entities from "../../icons/entities.png";
 import cog from "../../icons/cog.png";
 import groupnorms from "../../../media/photos/groupnorms.jpg";
+import App from "./PaginationWorkspace"
 
 
 
 
 
 const LatestUpdates = styled.div`
-    background-color: #282c34;
-  margin-left: 200px;
-  width: 1000px;
+  background-color: #282c34;
+  margin-left: 175px;
+  width: 1050px;
   margin-top: -75px;
+  height: 1450px;
   
  
 
@@ -38,9 +40,9 @@ const LatestUpdates = styled.div`
 
 const StartWorking = styled.div`
   background-color: gray;
-  margin-left: 175px;
-  width: 1050px;
-  height: 300px; 
+  margin-left: 150px;
+  width: 1100px;
+  height: 300px;
   margin-bottom: 1px;
   border-radius: 5px;
   border: 1px solid white;
@@ -162,28 +164,7 @@ export const WorkspaceGroupNorms: FC = () => {
                 </LatestUpdatesMedia>
 
                 <LatestUpdatesContent>
-                    <img style={{height:'130px', marginTop:'10px',marginLeft:'10px', borderRadius:'5px'}} src={WCSAS} alt={WCSAS}/>
-                    <img style={{height:'130px', marginTop:'10px',marginLeft:'10px', borderRadius:'5px'}} src={WCSAS} alt={WCSAS}/>
-                    <img style={{height:'130px', marginTop:'10px',marginLeft:'10px', borderRadius:'5px'}} src={WCSAS} alt={WCSAS}/>
-                    <img style={{height:'130px', marginTop:'10px',marginLeft:'10px', borderRadius:'5px'}} src={WCSAS} alt={WCSAS}/>
-                    <img style={{height:'130px', marginTop:'10px',marginLeft:'10px', borderRadius:'5px'}} src={WCSAS} alt={WCSAS}/>
-                    <img style={{height:'130px', marginTop:'10px',marginLeft:'10px', borderRadius:'5px'}} src={WCSAS} alt={WCSAS}/>
-                    <img style={{height:'130px', marginTop:'10px',marginLeft:'10px', borderRadius:'5px'}} src={WCSAS} alt={WCSAS}/>
-                    <img style={{height:'130px', marginTop:'10px',marginLeft:'10px', borderRadius:'5px'}} src={WCSAS} alt={WCSAS}/>
-                    <img style={{height:'130px', marginTop:'10px',marginLeft:'10px', borderRadius:'5px'}} src={WCSAS} alt={WCSAS}/>
-                    <img style={{height:'130px', marginTop:'10px',marginLeft:'10px', borderRadius:'5px'}} src={WCSAS} alt={WCSAS}/>
-                    <img style={{height:'130px', marginTop:'10px',marginLeft:'10px', borderRadius:'5px'}} src={WCSAS} alt={WCSAS}/>
-
-                    <ReactPaginate
-                        previousLabel={"PREVIOUS"}
-                        nextLabel={"NEXT"}
-                        breakLabel={"..."}
-                        breakClassName={"break-me"}
-                        marginPagesDisplayed={2}
-                        pageRangeDisplayed={3}
-                        containerClassName={"pagination"}
-                        activeClassName={"active"} pageCount={15}/>
-
+                    <App/>
                 </LatestUpdatesContent>
 
 

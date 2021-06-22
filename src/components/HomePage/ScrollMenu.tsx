@@ -20,23 +20,18 @@ const Content = styled.div`
 
 const list: any[] = [
 
-    { name: Workspace },
-    { name: Workspacecorporate},
-    { name: Workspacerealestatecontracts},
-    { name: Workspaceclientcontract },
-    { name: Workspacegroupnorms },
-
-
-
+    { name: Workspace, link:'Workspace' },
+    { name: Workspacecorporate, link:'Workspacecorporate'},
+    { name: Workspacerealestatecontracts, link: 'Workspacerealestatecontracts'},
+    { name: Workspaceclientcontract, link: 'WorkspaceClientconract' },
+    { name: Workspacegroupnorms, link: 'Workspacegroupnorms' },
 
 ];
 
-
-
-const MenuItem = ({text, selected}: {text: any, selected: any}) => {
-    return <a ><div
-        className={`menu-item ${selected ? 'active' : ''}`}
-    ><img style={{ boxShadow: "0px 2px #d8dbe1", borderLeft: "1px solid #d8dbe1", borderRight: "1px solid #d8dbe1"}} src={text}></img></div></a>;
+const MenuItem = ({text, selected, link}: {text: any, selected: any, link:any}) => {
+    return <div className={`menu-item ${selected ? 'active' : ''}`}>
+        <a href={'/'+ link}><img style={{ boxShadow: "0px 2px #d8dbe1", borderLeft: "1px solid #d8dbe1", borderRight: "1px solid #d8dbe1"}} src={text}></img></a>
+    </div>;
 
 };
 
@@ -45,7 +40,7 @@ export const Menu = (list: any[], selected: any) =>
     list.map((el) => {
         const {name} = el;
 
-        return <MenuItem text={name} selected={selected}/>;
+        return <MenuItem text={name} selected={selected} link={el.link}/>;
     });
 
 

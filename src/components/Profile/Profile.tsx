@@ -5,6 +5,14 @@ import tauren from "../../media/icons/tauren.png";
 import message from "../../media/icons/message.jpg";
 import user from "../../media/icons/user.png";
 import attach from "../../media/icons/attach.png";
+import messageprofil from "../../media/photos/messegeProfile.jpg"
+import addto from "../../media/photos/atacprofile.jpg"
+import create from "../../media/photos/carprofile.jpg"
+import xprofile from "../../media/photos/xprofile.jpg"
+import pencil from "../../media/photos/pencil.jpg"
+
+
+
 
 
 
@@ -13,6 +21,7 @@ background-color: white;
   width: 800px;
   margin-left: 350px;
   margin-top: 25px;
+  height: 220px;
 `;
 
 const Panel2 = styled.div`
@@ -20,6 +29,7 @@ const Panel2 = styled.div`
   width: 800px;
   margin-left: 350px;
   margin-top: 1px;
+  height: 350px;
 `;
 
 const PanelInformations = styled.div`
@@ -91,14 +101,32 @@ const Box3 = styled.div`
   margin-top: 5px;
 `;
 
+const ZdjProfile = styled.div`
+width: 180px;
+  height: 180px;
+`;
+
 
 
 export const Profile: FC = () => {
     return (
         <Wrapper>
             <Panel>
+                <img style={{height:'40px', marginLeft:'180px', cursor:'pointer'}} src={messageprofil} alt={messageprofil}/>
+                <img style={{height:'40px', cursor:'pointer'}} src={create} alt={create}/>
+                <img style={{height:'40px', cursor:'pointer'}} src={addto} alt={addto}/>
+                <img style={{height:'40px', cursor:'pointer'}} src={xprofile} alt={xprofile}/>
+                <img style={{height:'45px', cursor:'pointer', marginLeft:'750px' }} src={pencil} alt={pencil}/>
 
-P1
+                <ZdjProfile>
+                    <img style={{height:'90px', borderRadius:'100px', marginLeft:'60px', marginTop:'-40px'}} src={tauren} alt={tauren}/>
+                    <div style={{fontSize:'23px', color:'lightblue', marginLeft:'47px', cursor:'pointer'}}>
+                        See profile
+                    </div>
+
+                </ZdjProfile>
+
+
             </Panel>
 
             <Panel2>

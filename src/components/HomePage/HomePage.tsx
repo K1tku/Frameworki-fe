@@ -19,6 +19,7 @@ import App from "./Paginate"
 
 
 
+
 const LatestPublications = styled.div`
   margin-left: 30px;
   margin-top: 20px;
