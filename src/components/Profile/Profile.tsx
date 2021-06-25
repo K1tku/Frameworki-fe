@@ -10,10 +10,28 @@ import addto from "../../media/photos/atacprofile.jpg"
 import create from "../../media/photos/carprofile.jpg"
 import xprofile from "../../media/photos/xprofile.jpg"
 import pencil from "../../media/photos/pencil.jpg"
+import {Simulate} from "react-dom/test-utils";
 
 
 
 
+function editContent() {
+    var elements = document.getElementsByClassName("firstInputs");
+    let elementById = document.getElementById('pencil');
+    for(const x of elements as any){
+        if (x.disabled == true) {
+            x.disabled = false;
+
+
+        }
+        else {
+            x.disabled = true;
+
+        }
+
+    }
+
+}
 
 
 const Panel = styled.div`
@@ -122,13 +140,23 @@ export const Profile: FC  = () => {
                 <img style={{height:'40px', cursor:'pointer'}} src={create} alt={create}/>
                 <img style={{height:'40px', cursor:'pointer'}} src={addto} alt={addto}/>
                 <img style={{height:'40px', cursor:'pointer'}} src={xprofile} alt={xprofile}/>
-                <img style={{height:'45px', cursor:'pointer', marginLeft:'750px' }} src={pencil} alt={pencil}/>
+
+                <img  style={{height:'40px', cursor:'pointer',marginLeft:'750px'}} src={pencil} alt={pencil} id="pencil" onClick={(event:any) => editContent()}/>
+
 
                 <ZdjProfile>
-                    <img style={{height:'90px', borderRadius:'100px', marginLeft:'60px', marginTop:'-40px'}} src={tauren} alt={tauren}/>
+                    <input type='text' defaultValue={'Humberta swift'}  className="firstInputs" style={{outline:'none',position:'absolute', fontWeight:'bold',marginLeft:'200px',marginTop:'-10px', height:'25px', border:'none', backgroundColor:'white', borderRadius:'5px', fontSize:'18px', color:'black', width:'250px'}}/>
+                    <input type='text' defaultValue={'Clifford Chance'}  className="firstInputs" style={{outline:'none',position:'absolute', fontWeight:'bold',marginLeft:'200px',marginTop:'15px', height:'25px', border:'none', backgroundColor:'white', borderRadius:'5px', fontSize:'18px', color:'black', width:'250px'}}/>
+                    <input type='text' defaultValue={'New-york'}  className="firstInputs" style={{outline:'none',position:'absolute',marginLeft:'200px',marginTop:'40px', height:'25px', border:'none', backgroundColor:'white', borderRadius:'5px', fontSize:'18px', color:'black', width:'250px'}}/>
+                    <input type='text' defaultValue={'Partner'}  className="firstInputs" style={{outline:'none',position:'absolute',marginLeft:'200px',marginTop:'65px', height:'25px', border:'none', backgroundColor:'white', borderRadius:'5px', fontSize:'18px', color:'black', width:'250px'}}/>
+
+                    <img style={{height:'90px', borderRadius:'100px', marginLeft:'60px', marginTop:'-40px'}} src={tauren} alt={tauren} />
                     <div style={{fontSize:'23px', color:'lightblue', marginLeft:'47px', cursor:'pointer'}}>
                         See profile
                     </div>
+                    <input type='text' defaultValue={'humbertaswift@gmail.pl'}  className="firstInputs" style={{outline:'none', position:'absolute',marginLeft:'500px',marginTop:'-20px', height:'25px', border:'none', backgroundColor:'white', borderRadius:'5px', fontSize:'16px', color:'black', width:'250px'}}/>
+                    <input type='text' defaultValue={'+33(0)612345678'}  className="firstInputs" style={{outline:'none',position:'absolute',marginLeft:'500px',marginTop:'5px', height:'25px', border:'none', backgroundColor:'white', borderRadius:'5px', fontSize:'16px', color:'black', width:'250px'}}/>
+
 
                 </ZdjProfile>
 
@@ -137,12 +165,21 @@ export const Profile: FC  = () => {
             </Panel>
 
             <Panel2>
+                <img  style={{height:'40px', cursor:'pointer', marginLeft:'750px'}} src={pencil} alt={pencil} id="pencil" onClick={(event:any) => editContent()}/>
+                <a style={{marginLeft:'40px', fontSize:'23px', color:'gray'}}> Expertise</a>
+                <br/><input type='text' defaultValue={'Margers and acquisition'}  className="firstInputs" style={{outline:'none',marginLeft:'40px',marginTop:'5px', height:'30px', border:'none', backgroundColor:'#e6f0f3', borderRadius:'5px', fontSize:'20px', color:'#7db3c1', width:'250px'}}/>
 
-                <SearchField>
-                    <input type="text" style={{height:'25px', border:'none', backgroundColor:'#e6f0f3', borderRadius:'5px', fontSize:'20px', color:'#7db3c1', width:'150px'}}/>
+                <br/><br/><a style={{marginLeft:'40px', fontSize:'23px', color:'gray'}}> Specialties</a>
+                <br/><input type='text' defaultValue={'Cross border operation'}  className="firstInputs" style={{outline:'none',marginLeft:'40px',marginTop:'5px', height:'30px', border:'none', backgroundColor:'#e6f0f3', borderRadius:'5px', fontSize:'20px', color:'#7db3c1', width:'230px'}}/>
+                <input type='text' defaultValue={'Transaction over 500ME/$'}  className="firstInputs" style={{outline:'none',marginLeft:'15px',marginTop:'5px', height:'30px', border:'none', backgroundColor:'#e6f0f3', borderRadius:'5px', fontSize:'20px', color:'#7db3c1', width:'240px'}}/>
 
+                <br/><br/><a style={{marginLeft:'40px', fontSize:'23px', color:'gray'}}>Admission to practice law</a>
+                <br/><input type='text' defaultValue={'Paris bar association'}  className="firstInputs" style={{outline:'none',marginLeft:'40px',marginTop:'5px', height:'30px', border:'none', backgroundColor:'#e6f0f3', borderRadius:'5px', fontSize:'20px', color:'#7db3c1', width:'200px'}}/>
+                <input type='text' defaultValue={'Tunisian bar association'}  className="firstInputs" style={{outline:'none',marginLeft:'15px',marginTop:'5px', height:'30px', border:'none', backgroundColor:'#e6f0f3', borderRadius:'5px', fontSize:'20px', color:'#7db3c1', width:'220px'}}/>
 
-                </SearchField>
+                <br/><br/><a style={{marginLeft:'40px', fontSize:'23px', color:'gray'}}>Counties</a>
+                <br/><input type='text' defaultValue={'Tunisia'}  className="firstInputs" style={{outline:'none',marginLeft:'40px',marginTop:'5px', height:'30px', border:'none', backgroundColor:'#e6f0f3', borderRadius:'5px', fontSize:'20px', color:'#7db3c1', width:'100px'}}/>
+
             </Panel2>
 
             <PanelInformations>
@@ -223,6 +260,8 @@ export const Profile: FC  = () => {
                     <tr><td> </td><td>CS 153</td><td>19 500$</td><th>Linklaters</th></tr>
                     <tr><td> </td><td>CS 32</td><td>15 500$</td><th>Linklaters</th></tr>
                 </Table3>
+                <br/><br/><br/><br/>
+
             </AOF>
 
 
